@@ -34,7 +34,7 @@ public class Driver{
 		
 		Job job = Job.getInstance(conf, "person sort");
 		job.setJarByClass(Driver.class);
-	
+		job.getConfiguration().set("key.value.separator.in.input.line", ",");
 		job.setMapperClass(PersonMapper.class);
 		job.setReducerClass(PersonReducer.class);
 
