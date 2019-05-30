@@ -10,13 +10,16 @@ import org.apache.hadoop.io.WritableComparable;
 public class Person implements WritableComparable<Person>{
 
 	private Text lname,fname;
+	
 	public Person() {
 		lname= new Text();
 		fname= new Text();
 	}
+	
 	public Person(String lastName,String firstName) {
 		this(new Text(lastName), new Text(firstName));
 	}
+	
 	public Person(Text lastName, Text FirstName) {
 		this.lname=lastName;
 		this.fname=FirstName;
@@ -28,17 +31,19 @@ public class Person implements WritableComparable<Person>{
 	public void setLname(Text lname) {
 		this.lname = lname;
 	}
+	
 	public Text getFname() {
 		return fname;
 	}
+	
 	public void setFname(Text fname) {
 		this.fname = fname;
 	}
+	
 	public void readFields(DataInput in) throws IOException {
 		// TODO Auto-generated method stub
 		lname.readFields(in);
-		fname.readFields(in);
-		
+		fname.readFields(in);	
 	}
 
 	public void write(DataOutput out) throws IOException {
@@ -55,6 +60,5 @@ public class Person implements WritableComparable<Person>{
 		}
 		return cmp;
 	}
-
 
 }

@@ -22,6 +22,4 @@ public class PersonSortingComparator extends WritableComparator{
 		return cmp;
 	}
 
-	
-
 }

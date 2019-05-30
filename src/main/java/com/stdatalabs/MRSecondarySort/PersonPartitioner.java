@@ -11,6 +11,4 @@ public class PersonPartitioner extends Partitioner<Person, Text>{
 		return (key.getLname().hashCode() % nuOfReducers);
 	}
 
-	
-
 }

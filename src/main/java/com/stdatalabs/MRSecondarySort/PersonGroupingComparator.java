@@ -19,6 +19,4 @@ public class PersonGroupingComparator extends WritableComparator{
 		
 	}
 	
-
-
 }
