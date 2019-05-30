@@ -31,7 +31,6 @@ public class Driver extends Configured implements Tool {
 		ToolRunner.run(new Driver(), args);
 	}
 
-	@Override
 	public int run(String[] args) throws Exception {
 		Job job = Job.getInstance(getConf());
 		job.setJarByClass(Driver.class);

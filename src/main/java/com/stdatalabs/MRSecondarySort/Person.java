@@ -34,7 +34,6 @@ public class Person implements WritableComparable<Person>{
 	public void setFname(Text fname) {
 		this.fname = fname;
 	}
-	@Override
 	public void readFields(DataInput in) throws IOException {
 		// TODO Auto-generated method stub
 		lname.readFields(in);
@@ -42,14 +41,12 @@ public class Person implements WritableComparable<Person>{
 		
 	}
 
-	@Override
 	public void write(DataOutput out) throws IOException {
 		// TODO Auto-generated method stub
 		lname.write(out);
 		fname.write(out);
 	}
 
-	@Override
 	public int compareTo(Person o) {
 		// TODO Auto-generated method stub
 		int cmp = lname.compareTo(o.lname);
