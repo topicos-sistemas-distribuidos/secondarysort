@@ -75,10 +75,4 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>cloudera-repo</id>
-			<url>http://repository.cloudera.com/artifactory/cloudera-repos/</url>
-		</repository>
-	</repositories>
 </project>
