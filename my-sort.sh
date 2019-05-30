@@ -15,7 +15,7 @@ hadoop fs -mkdir -p input$1
 hdfs dfs -put ./input$1/* input$1
 
 # run sort
-hadoop jar /root/secondarysort/target/MRSecondarySort-0.0.1.jar input$1 output$1
+yarn jar /root/secondarysort/target/MRSecondarySort-0.0.1.jar input$1 output$1
 
 # print the output of sort
 echo -e "\nsort output:"
