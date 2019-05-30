@@ -23,4 +23,33 @@ $ git clone https://github.com/topicos-sistemas-distribuidos/secondarysort.git
 $./my-sort.sh -sort
 ```
 
+4. Output
+```
+sort output:
+richard	Kingman
+richard	Kingore
+richard	Kingrey
+richard	Kingry
+richard	Kings
+richard	Mathwich
+richard	Mathys
+richard	Matias
+richard	Matice
+richard	Matier
+richard	Matin
+richard	Matinez
+richard	Matis
+richard	Matise
+richard	Matison
+richard	Schultes
+richard	Schultheis
+richard	Schultheiss
+richard	Schulthess
+richard	Schultz
+richard	Schultze
+richard	Schulweis
+richard	Schulz
+richard	Schulze
+```
+
 Obs: Os scripts precisam de permissão para executar. Por exemplo: chmod +x my-sort.sh
